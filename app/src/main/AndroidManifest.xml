@@ -55,6 +55,7 @@
         <activity android:name=".utils.MessageActivity" android:label="分享软件" />
         <activity android:name=".utils.CameraActivity" android:label="保存图片"/>
         <activity android:name=".utils.MapActivity" android:label="分享位置"/>
+        <activity android:name=".viewUI.ChatMainActivity" android:label="好友聊天"/>
 
 
         <!--注册高德Key使用的SHA1值-->

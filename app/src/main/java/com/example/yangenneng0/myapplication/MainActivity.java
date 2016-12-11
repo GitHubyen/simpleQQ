@@ -14,9 +14,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import com.example.yangenneng0.myapplication.utils.CameraActivity;
 import com.example.yangenneng0.myapplication.utils.MapActivity;
 import com.example.yangenneng0.myapplication.utils.MessageActivity;
+import com.example.yangenneng0.myapplication.viewUI.ChatMainActivity;
 import com.example.yangenneng0.myapplication.viewUI.RegistActivity;
 import com.example.yangenneng0.myapplication.viewUI.SettingsActivity;
 
@@ -57,6 +59,18 @@ public class MainActivity extends AppCompatActivity
         //设置左侧菜单
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //聊天
+        Button button= (Button) findViewById(R.id.goChat);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, ChatMainActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
     }
 
     /**

@@ -17,7 +17,19 @@
         tools:context="com.example.yangenneng0.myapplication.MainActivity">
 
     <TextView
-            android:text="Hello World!"
+            android:text="Hello World!\n\n\n\n\n\n"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/goChat"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:text="点击聊天"
+            android:textStyle="bold"/>
+
 </RelativeLayout>
