@@ -13,8 +13,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#89cae2"
-            android:text="输入短信接收者，群发以,分隔"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:text="\n输入短信接收者，群发以,分隔\n"
             android:id="@+id/textView2"/>
     </android.support.design.widget.TextInputLayout>
 
