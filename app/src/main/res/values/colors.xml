@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18b4Ed</color><!--主屏幕的导航背景颜色-->
+    <color name="colorPrimaryDark">#18b4Ed</color>
+    <color name="colorAccent">#18b4Ed</color><!--主屏幕的按钮颜色-->
+</resources>

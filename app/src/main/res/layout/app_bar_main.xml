@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <!--CoordinatorLayout从名字上可以看出，就是帮我们协调子View的。-->
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.yangenneng0.myapplication.MainActivity">
+
+    <!--首页导航条区域-->
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--Toolbar首页顶部的工具栏-->
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#18b4Ed"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--首页内容区域 包含content_main-->
+    <include layout="@layout/content_main"/>
+
+
+    <!--浮动操作按钮,可以配合ListView等滚动控件,实现当ListView 向上滑动的时候按钮就会显示出来,当向下滑动按钮会自动隐藏。-->
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_menu_share"/>
+
+</android.support.design.widget.CoordinatorLayout>
