@@ -15,6 +15,7 @@
     <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <!--使用网络功能申明-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  <!--用于访问GPS定位-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/><!--允许程序获取网络状态-->
     <uses-permission android:name="android.permission.INTERNET"/><!--允许程序打开网络套接字-->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/><!--允许程序访问WiFi网络信息-->
@@ -60,6 +61,8 @@
         <meta-data android:name="com.amap.api.v2.apikey" android:value="03e9443c565a13a314c8ea2a8bcd606d">//开发者申请的key
         </meta-data>
 
+        <!--实现定位-->
+        <service android:name="com.amap.api.location.APSService"/>
 
     </application>
 
