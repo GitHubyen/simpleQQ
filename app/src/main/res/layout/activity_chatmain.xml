@@ -17,6 +17,7 @@
                 android:id="@+id/chatGoHome"
                 android:text="&lt;返回"
                 android:layout_width="70dp"
+                android:background="@color/colorPrimary"
                 android:textColor="#fff"
                 android:layout_height="wrap_content"/>
         <TextView

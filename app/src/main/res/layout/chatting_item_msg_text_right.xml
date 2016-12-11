@@ -11,6 +11,7 @@
             android:gravity="center_horizontal"
             android:orientation="vertical" >
 
+        <!--时间-->
         <TextView
                 android:id="@+id/tv_sendtime"
                 style="@style/chat_text_date_style"
@@ -22,12 +23,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp" >
-
+        <!--头像-->
         <ImageView
                 android:id="@+id/iv_userhead"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/head_3"
                 android:focusable="false" />
@@ -37,10 +38,10 @@
                 style="@style/chat_content_date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/iv_userhead"
+                android:layout_marginRight="10dp"
+                android:background="#ef5e4b"
                 android:textColor="#fff"
-                android:background="#e77a87"
+                android:layout_toLeftOf="@id/iv_userhead"
         />
 
         <TextView
@@ -48,9 +49,9 @@
                 style="@style/chat_text_name_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
                 android:layout_below="@id/iv_userhead"
-                android:layout_toLeftOf="@id/tv_chatcontent" />
+                android:layout_toRightOf="@id/tv_chatcontent" />
     </RelativeLayout>
 
 </LinearLayout>

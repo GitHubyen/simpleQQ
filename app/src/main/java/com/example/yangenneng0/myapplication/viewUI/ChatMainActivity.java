@@ -55,17 +55,17 @@ public class ChatMainActivity extends Activity implements View.OnClickListener {
         mEditTextContent = (EditText) findViewById(R.id.et_sendmessage);
     }
 
-    private String[] msgArray = new String[] { "在吗，有时间吗", "有！你呢？", "我也有", "那上吧",
-            "打啊！你放大啊！", "你咋不放呢？留大抢人头啊？", "不解释", "尼滚...",
-            "今晚去网吧吧？", "确定吗？", "不然呢？", "OK,走起！！" };
+    private String[] msgArray = new String[] { "在吗，有时间吗?", "有！你呢？", "我也有", "那走吧",
+            "走啊！去打球啊！", "要先吃点东西吗？", "不吃了", "好吧...",
+            "今晚去吃东西吧？", "确定吗？", "不然呢？", "OK,走起！！" };
 
-    private String[] dataArray = new String[] { "2016-09-22 18:00:02",
-            "2016-09-22 18:10:22", "2016-09-22 18:11:24",
-            "2016-09-22 18:20:23", "2016-09-22 18:30:31",
-            "2016-09-22 18:35:37", "2016-09-22 18:40:13",
-            "2016-09-22 18:50:26", "2016-09-22 18:52:57",
-            "2016-09-22 18:55:11", "2016-09-22 18:56:45",
-            "2016-09-22 18:57:33", };
+    private String[] dataArray = new String[] { "2016-12-11 18:00:02",
+            "2016-12-11 18:10:22", "2016-12-11 18:11:24",
+            "2016-12-11 18:20:23", "2016-12-11 18:30:31",
+            "2016-12-11 18:35:37", "2016-12-11 18:40:13",
+            "2016-12-11 18:50:26", "2016-12-11 18:52:57",
+            "2016-12-11 18:55:11", "2016-12-11 18:56:45",
+            "2016-12-11 18:57:33", };
     private final static int COUNT = 12;// 初始化数组总数
 
     /**
@@ -76,7 +76,7 @@ public class ChatMainActivity extends Activity implements View.OnClickListener {
             ChatMsgEntity entity = new ChatMsgEntity();
             entity.setDate(dataArray[i]);
             if (i % 2 == 0) {
-                entity.setName("LLL");
+                entity.setName("CCC");
                 entity.setMsgType(true);// 收到的消息
             } else {
                 entity.setName("YEN");
