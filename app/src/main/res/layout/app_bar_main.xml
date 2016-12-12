@@ -4,6 +4,7 @@
 <android.support.design.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,13 +32,48 @@
     <include layout="@layout/content_main"/>
 
 
-    <!--浮动操作按钮,可以配合ListView等滚动控件,实现当ListView 向上滑动的时候按钮就会显示出来,当向下滑动按钮会自动隐藏。-->
-    <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
+    <!--&lt;!&ndash;浮动操作按钮,可以配合ListView等滚动控件,实现当ListView 向上滑动的时候按钮就会显示出来,当向下滑动按钮会自动隐藏。&ndash;&gt;-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_margin="@dimen/fab_margin"-->
+            <!--android:src="@android:drawable/ic_menu_share"/>-->
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/multiple_actions_down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
             android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            android:src="@android:drawable/ic_menu_share"/>
+            fab:fab_addButtonColorNormal="@color/colorPrimary"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_addButtonColorPressed="#86e7c2"
+            fab:fab_addButtonPlusIconColor="#fff"
+            fab:fab_addButtonSize="normal"
+            fab:fab_expandDirection="up"
+    >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_remove1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#eca698"
+            fab:fab_colorPressed="#4ccea0"
+            fab:fab_size="normal"
+            fab:fab_title="写说说" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/button_remove2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#f1f09e"
+                fab:fab_colorPressed="#f1aeae"
+                fab:fab_size="normal"
+                fab:fab_title="看动态" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 </android.support.design.widget.CoordinatorLayout>
