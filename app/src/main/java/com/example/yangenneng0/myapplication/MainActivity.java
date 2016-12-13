@@ -22,8 +22,10 @@ import com.example.yangenneng0.myapplication.utils.CameraActivity;
 import com.example.yangenneng0.myapplication.utils.MapActivity;
 import com.example.yangenneng0.myapplication.utils.MessageActivity;
 import com.example.yangenneng0.myapplication.utils.WordsNavigation;
+import com.example.yangenneng0.myapplication.viewUI.QQmoodActivity;
 import com.example.yangenneng0.myapplication.viewUI.RegistActivity;
 import com.example.yangenneng0.myapplication.viewUI.SettingsActivity;
+import com.getbase.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -104,6 +106,17 @@ public class MainActivity extends AppCompatActivity
         //        MainActivity.this.startActivity(intent);
         //    }
         //});
+
+        //发表说说
+        FloatingActionButton button= (FloatingActionButton) findViewById(R.id.button_mood);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, QQmoodActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
 
     }
 

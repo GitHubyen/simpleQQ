@@ -43,7 +43,7 @@
 
     <!--弹出按钮文字背景-->
     <style name="menu_labels_style">
-        <item name="android:background">#fff</item>
+        <item name="android:background">#00ffffff</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 

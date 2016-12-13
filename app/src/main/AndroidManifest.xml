@@ -54,6 +54,7 @@
         <activity android:name=".viewUI.SettingsActivity" android:label="@string/title_activity_settings" />
         <activity android:name=".utils.MessageActivity" android:label="分享软件" />
         <activity android:name=".utils.CameraActivity" android:label="保存图片"/>
+        <activity android:name=".viewUI.QQmoodActivity" android:label="发布说说"/>
         <activity android:name=".utils.MapActivity" android:label="地理位置"/>
         <activity android:name=".viewUI.ChatMainActivity" android:label="好友聊天"/>
 

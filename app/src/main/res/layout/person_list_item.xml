@@ -4,11 +4,12 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <!--放字符的条目-->
     <TextView
             android:id="@+id/tv_word"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="#ebebeb"
+            android:layout_height="15dp"
+            android:background="#eceded"
             android:gravity="center_vertical"
             android:paddingLeft="?android:attr/listPreferredItemPaddingLeft" />
 
