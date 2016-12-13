@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">手机QQ</string>
-    <string name="top_lable_name">QQ消息</string>
+    <string name="top_lable_name">好友列表</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

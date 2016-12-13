@@ -5,7 +5,7 @@ import com.example.yangenneng0.myapplication.utils.PinYinUtils;
 /**
  * User: yangenneng
  * DateTime: 2016/12/13 10:43
- * Description:
+ * Description:好友实体类
  */
 public class Person {
     //姓名

@@ -65,16 +65,16 @@
             android:background="#00ffffff"
             fab:fab_colorNormal="#eca698"
             fab:fab_colorPressed="#4ccea0"
-            fab:fab_size="normal"
+            fab:fab_size="mini"
             fab:fab_title="写说说" />
         <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/button_remove2"
+                android:id="@+id/button_qzone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00ffffff"
                 fab:fab_colorNormal="#f1f09e"
                 fab:fab_colorPressed="#f1aeae"
-                fab:fab_size="normal"
+                fab:fab_size="mini"
                 fab:fab_title="看动态" />
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 

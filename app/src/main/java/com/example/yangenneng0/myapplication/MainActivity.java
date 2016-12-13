@@ -23,6 +23,7 @@ import com.example.yangenneng0.myapplication.utils.MapActivity;
 import com.example.yangenneng0.myapplication.utils.MessageActivity;
 import com.example.yangenneng0.myapplication.utils.WordsNavigation;
 import com.example.yangenneng0.myapplication.viewUI.QQmoodActivity;
+import com.example.yangenneng0.myapplication.viewUI.QzoneActivity;
 import com.example.yangenneng0.myapplication.viewUI.RegistActivity;
 import com.example.yangenneng0.myapplication.viewUI.SettingsActivity;
 import com.getbase.floatingactionbutton.FloatingActionButton;
@@ -114,6 +115,17 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, QQmoodActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        //浏览空间
+        FloatingActionButton button2= (FloatingActionButton) findViewById(R.id.button_qzone);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, QzoneActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });
@@ -267,29 +279,29 @@ public class MainActivity extends AppCompatActivity
         list.add(new Person("胡继群"));
         list.add(new Person("徐歌阳"));
         list.add(new Person("钟泽兴"));
-        list.add(new Person("宋某人"));
-        list.add(new Person("刘某人"));
+        list.add(new Person("宋浮点"));
+        list.add(new Person("刘俄式"));
         list.add(new Person("Tony"));
         list.add(new Person("老刘"));
-        list.add(new Person("隔壁老王"));
+        list.add(new Person("葛优"));
         list.add(new Person("安传鑫"));
         list.add(new Person("温松"));
         list.add(new Person("成龙"));
         list.add(new Person("那英"));
         list.add(new Person("刘甫"));
         list.add(new Person("沙宝亮"));
-        list.add(new Person("张猛"));
+        list.add(new Person("张梁"));
         list.add(new Person("张大爷"));
         list.add(new Person("张哥"));
-        list.add(new Person("张娃子"));
-        list.add(new Person("樟脑丸"));
+        list.add(new Person("张娃"));
+        list.add(new Person("张丽"));
         list.add(new Person("吴亮"));
         list.add(new Person("Tom"));
-        list.add(new Person("阿三"));
-        list.add(new Person("肖奈"));
-        list.add(new Person("贝微微"));
+        list.add(new Person("安在"));
+        list.add(new Person("小李"));
+        list.add(new Person("贝阿朵"));
         list.add(new Person("赵二喜"));
-        list.add(new Person("曹光"));
+        list.add(new Person("阿道夫"));
         list.add(new Person("姜宇航"));
 
         //对集合排序
