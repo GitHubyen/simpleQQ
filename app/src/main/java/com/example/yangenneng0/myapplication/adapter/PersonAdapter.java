@@ -1,6 +1,8 @@
 package com.example.yangenneng0.myapplication.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import com.example.yangenneng0.myapplication.R;
 import com.example.yangenneng0.myapplication.model.Person;
+import com.example.yangenneng0.myapplication.viewUI.ChatMainActivity;
 
 import java.util.List;
 
@@ -18,11 +21,14 @@ import java.util.List;
  */
 public class PersonAdapter  extends BaseAdapter {
 
+    private Context context;//为了跳转而写的
+
     private List<Person> list;
     private LayoutInflater inflater;
 
     public PersonAdapter(Context context, List<Person> list) {
         inflater = LayoutInflater.from(context);
+        this.context=context;//为了跳转而写的
         this.list = list;
     }
 
@@ -42,7 +48,7 @@ public class PersonAdapter  extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         ViewHolder holder; //自定义内部内类
         if(null==convertView){
@@ -58,6 +64,19 @@ public class PersonAdapter  extends BaseAdapter {
         String word=list.get(position).getHeaderWord();//第一个字母
         holder.tv_word.setText(word);
         holder.tv_name.setText(list.get(position).getName());
+
+
+        //跳转到聊天页面
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(context,ChatMainActivity.class);
+                context.startActivity(intent);
+
+                Snackbar.make(v, "position:"+position, Snackbar.LENGTH_LONG)  .setAction("Action", null).show();
+            }
+        });
 
         //将相同字母开头的合并在一起
         if(position==0){
